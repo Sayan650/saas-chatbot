@@ -6,15 +6,15 @@ import TypeSelectionForm from './type-selection-form'
 import dynamic from 'next/dynamic'
 import { Spinner } from '@/components/spinner'
 
-// const DetailForm = dynamic(() => import('./account-details-form'), {
-//   ssr: false,
-//   loading: Spinner,
-// })
+const DetailForm = dynamic(() => import('./account-details-form'), {
+  ssr: false,
+  // loading: Spinner,
+})
 
-// const OTPForm = dynamic(() => import('./otp-form'), {
-//   ssr: false,
-//   loading: Spinner,
-// })
+const OTPForm = dynamic(() => import('./otp-form'), {
+  ssr: false,
+  // loading: Spinner,
+})
 
 type Props = {}
 
@@ -39,20 +39,20 @@ const RegistrationFormStep = (props: Props) => {
           setUserType={setOnUserType}
         />
       )
-    // case 2:
-    //   return (
-    //     <DetailForm
-    //       errors={errors}
-    //       register={register}
-    //     />
-    //   )
-    // case 3:
-    //   return (
-    //     <OTPForm
-    //       onOTP={onOTP}
-    //       setOTP={setOnOTP}
-    //     />
-    //   )
+    case 2:
+      return (
+        <DetailForm
+          errors={errors}
+          register={register}
+        />
+      )
+    case 3:
+      return (
+        <OTPForm
+          onOTP={onOTP}
+          setOTP={setOnOTP}
+        />
+      )
   }
 
   return <div>RegistrationFormStep</div>
