@@ -20,6 +20,7 @@ const SignUpFormProvider = ({ children }: Props) => {
           className="h-full"
         >
           <div className="flex flex-col justify-between gap-3 h-full">
+            {/* {children} */}
             <Loader loading={loading}>{children}</Loader>
           </div>
         </form>

@@ -93,7 +93,7 @@ body {
 }
 
 .chat-bubble {
-  background-color: #f1f1f1;
+  background-color: #03070F;
   padding: 16px 28px;
   -webkit-border-t-radius: 10px;
   -webkit-border-bottom-left-radius: 2px;
@@ -110,7 +110,7 @@ body {
 }
 .typing .dot {
   animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
-  background-color: #ffc989;
+  background-color: #5732FF;
   border-radius: 50%;
   height: 7px;
   margin-right: 4px;
@@ -134,11 +134,11 @@ body {
 @keyframes mercuryTypingAnimation {
   0% {
     transform: translateY(0px);
-    background-color: #ffc989;
+    background-color: #5732FF;
   }
   28% {
     transform: translateY(-7px);
-    background-color: #ffa947;
+    background-color: #6A6CE1;
   }
   44% {
     transform: translateY(0px);

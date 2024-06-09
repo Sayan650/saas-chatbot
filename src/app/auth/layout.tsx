@@ -13,7 +13,7 @@ const Layout = async ({ children }: Props) => {
   if (user) redirect("/");
 
   return (
-    <div className="h-screen bg-black flex w-full justify-center">
+    <div className="h-screen flex w-full justify-center">
       <div className="w-[600px] ld:w-full flex flex-col items-start p-6">
         <Image
           src="/images/logo.png"
@@ -30,7 +30,7 @@ const Layout = async ({ children }: Props) => {
       </div>
       <div className="hidden lg:flex flex-1 w-full max-h-full max-w-4000px overflow-hidden relative bg-cream  flex-col pt-10 pl-24 gap-3">
         <h2 className="text-gravel md:text-4xl font-bold">
-          Hi, I&apos;m your AI powered sales assistant, Corinna!
+          Hi, I&apos;m your AI powered sales assistant, Memorly!
         </h2>
         <p className="text-iridium md:text-sm mb-10">
           Memorly is capable of capturing lead information without a form...{" "}
@@ -42,7 +42,7 @@ const Layout = async ({ children }: Props) => {
           alt="app image"
           loading="lazy"
           sizes="30"
-          className="absolute shrink-0 !w-[1600px] top-48"
+          className="absolute shrink-0 !w-[1600px] border-white shadow-lg top-48"
           width={0}
           height={0}
         />
